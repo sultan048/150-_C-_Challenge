@@ -1,1 +1,2621 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Collections.Immutable;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics.Metrics;
+using System.Diagnostics.Tracing;
+using System.Globalization;
+using System.Linq;
+using System.Reflection.Metadata;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.IO;
+using System.Runtime.Intrinsics.X86;
+using System.Runtime.Intrinsics.Arm;
+using System.Diagnostics;
+using System.Reflection;
+using System.Diagnostics.CodeAnalysis;
+using System.Data;
+using System.Net.WebSockets;
+using System.ComponentModel.DataAnnotations;
+
+namespace _150_task
+{
+    internal class Program
+    {
+        public static int Sum(int a, int b)
+        {
+            return a + b;
+        }
+        public static int converte(int y)
+        {
+            return 60 * y;
+        }
+        public static int add(int x, int y)
+        {
+            return (x + y) + 1;
+        }
+        public static int total(int volt, int current)
+        {
+            return volt * current;
+        }
+        public static int calage(int c)
+        {
+            return c * 365;
+        }
+        public static int triangle(int t, int r)
+        {
+            return (t + r) / 2;
+        }
+        public static int reminder(int q, int w)
+        {
+            return (q + w) % 2;
+        }
+        public static bool than(int u, int i)
+        {
+            return u <= i;
+        }
+        public static bool yes(int o, int p)
+        {
+            return (o + p) <= 100;
+        }
+        public static bool method(int jj, int pp)
+        {
+            return jj == pp;
+        }
+        public static string methods(string a)
+        {
+            return "some thing" + a;
+        }
+        public static bool rev(bool b)
+        {
+            return !b;
+        }
+        public static int time(int min)
+        {
+            return 60 * min;
+        }
+        public static int poly(int go)
+        {
+            return 180 * (go - 2);
+        }
+        public static bool equal(int num, int nem)
+        {
+            return (num == nem);
+        }
+        public static string name(string work)
+        {
+            return work + " is a good boy " + "\n" + "And who give this toy to " + work;
+        }
+        public static bool and(bool ff, bool dd)
+        {
+            return ff && dd;
+        }
+        public static int points(int twoN, int threeN)
+        {
+            return (2 * twoN) + (threeN * 3);
+        }
+        public static int tri(int rr, int tt)
+        {
+            return (rr + tt) * 2;
+        }
+        public static string greeting(string vv)
+        {
+            return "Hello" + vv;
+        }
+        public static int legs(int hens, int cows, int pig)
+        {
+            return (2 * hens) + (cows * 4) + (pig * 4);
+        }
+        public static int football(int win, int draw, int loss)
+        {
+            return (win * 3) + (draw * 1) + (loss * 0);
+        }
+
+        public static int convertintosec(int hours, int mins)
+        {
+            return (hours * 60) + (mins * 60);
+        }
+        public static int triangleside(int side1, int side2)
+        {
+            return (side1 + side2) - 1;
+        }
+        public static double feet(int feets)
+        {
+            return feets * 12;
+        }
+        public static string greeteng(string name)
+        {
+            if (name == "ali")
+            {
+                return "Welcome My Friend ";
+            }
+            return "Hello " + name + "!";
+        }
+        public static bool divideby5(int nums)
+        {
+            try
+            {
+                nums /= 5;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static int squr(int sq)
+        {
+            return sq * sq;
+        }
+        public static bool eqdivid(int ib, int bi)
+        {
+            if (ib / bi == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int frame(int fa, int se)
+        {
+            return (fa * 6) * (se * 10);
+        }
+        public static bool profit(int prob, int prize, int pay)
+        {
+            if (prob * prize > pay)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool divided100(int div)
+        {
+            try
+            {
+                div /= 100;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static bool chist(int year, int month, int day)
+        {
+            if (month == 12)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int cube(int block)
+        {
+            return block * block;
+        }
+        public static int cube2(int block1)
+        {
+            return (block1 * block1) * 6;
+        }
+        public static bool fix(int fi)
+        {
+            return fi % 2 == 0;
+        }
+        public static string cancate(string first, string last)
+        {
+            return first + last;
+        }
+        public static bool empty(string emp)
+        {
+            if (string.IsNullOrEmpty(emp))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int abs(int neg)
+        {
+            return Math.Abs(neg);
+        }
+        public static bool equ(string st1, string st2)
+        {
+            if (string.Equals(st1, st2))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static object cup(int free)
+        {
+            return free + (free / 6);
+        }
+        public static int negative(int neg)
+        {
+            return neg * -1;
+        }
+        public static int positive(int pos)
+        {
+            return pos;
+        }
+        public static bool times(int age, bool time)
+        {
+            if (age >= 18)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int trie(int hypo, int bases)
+        {
+            if (hypo * bases <= 0)
+            {
+                return -1;
+            }
+            return hypo * bases;
+        }
+        public static bool evenor(string word)
+        {
+
+            if (word.Length % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string oddor(int odd)
+        {
+            if (odd % 2 == 0)
+            {
+                return "even number";
+            }
+            else
+            {
+                return "odd number";
+            }
+        }
+        public static bool safe(string bri)
+        {
+            return !bri.Contains(' ');
+        }
+        public static int lengt(string le)
+        {
+            return le.Length;
+        }
+        public static bool last(string la)
+        {
+            return la.EndsWith("n");
+        }
+        public static int lang(int li)
+        {
+            return Convert.ToString(li).Length;
+        }
+        public static int asint(string INT)
+        {
+            return Convert.ToInt32(INT);
+        }
+        public static bool check(string st)
+        {
+            List<int> aaaaa = new List<int>() { 1, 2, 3, 4693, 5 };
+            bool wwww = aaaaa.Contains(4693);
+
+            return st.Contains(" ");
+        }
+        public static bool equ0(int de, int ed)
+        {
+            return de == 0 && ed == 0;
+        }
+        public static int dif(int[] ma)
+        {
+
+            return ma.Max() - ma.Min();
+        }
+        public static bool DoExists(string sin)
+        {
+
+            var ttd = "ali".IndexOf(sin);
+            if (ttd > -1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool slic(int total, int taken, int each)
+        {
+            return taken * each <= total;
+        }
+        public static object abj(int[] ar)
+        {
+            return ar[ar.Length - 1];
+        }
+        public static bool singlur(string sn)
+        {
+            if (sn.EndsWith("s"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static int types(string cast)
+        {
+            return Convert.ToInt32(cast);
+        }
+        public static string somes(int add, int sub)
+        {
+            return add + sub + " by addition";
+        }
+        public static string typess(int casts)
+        {
+            return Convert.ToString(casts);
+        }
+        public static int operatorr(int sr, int rs, string operation)
+        {
+            return operation == "+" ? sr + rs :
+                operation == "-" ? sr - rs :
+                operation == "%" ? sr % rs :
+                operation == "/" ? sr / rs :
+                sr * rs;
+        }
+        public static int pick(int[] pic)
+        {
+            return pic.Min();
+        }
+        public static int ocik(int[] pci)
+        {
+            return pci.Max();
+        }
+        public static string match(string sg)
+        {
+            return $"{sg.First()}{sg.Last()}";
+        }
+        public static int postiv(int pos)
+        {
+            int count = 0;
+            for (int jj = 0; jj <= int.MaxValue; jj++)
+                if (jj % 3 == 0)
+                {
+                    count++;
+                    if (count == pos)
+                    {
+                        return jj;
+                    }
+                }
+            return 0;
+        }
+        public static int modulus(int mo, int on)
+        {
+            return mo % on;
+        }
+        public static bool metch(string one1, string two2)
+        {
+            return (one1.ToLower() == two2.ToLower());
+        }
+        public static int difff(int[] di)
+        {
+            return di.Max() - di.Min();
+        }
+        public static int index(int[] did, int find)
+        {
+            return did.Length - 1;
+        }
+        public static bool ending(string gf, string fg)
+        {
+            return gf.EndsWith("g") == fg.EndsWith("g");
+        }
+        public static string ring(string rin)
+        {
+            return rin;
+        }
+
+        public static int pow(int pw)
+        {
+            double ret = Math.Pow(2, pw);
+            return (int)ret;
+        }
+        public static int resister(int res1, int res2, int res3, int res4)
+        {
+            if (res1 + res2 + res3 + res4 < 1)
+            {
+                return -1;
+            }
+            return res1 + res2 + res3 + res4;
+        }
+        public static int intlength(int lie)
+        {
+            return lie.ToString().Length;
+        }
+        public static string missangle(int angle1, int angle2)
+        {
+            if (angle1 + angle2 == 90)
+            {
+                return "this is right triangle";
+            }
+            if (angle1 + angle2 < 90)
+            {
+                return "this is obtuse triangle";
+            }
+            if (angle1 + angle2 > 90)
+            {
+                return "this is acute triangle";
+            }
+            return "-1";
+        }
+        public static string[] ebded(string[] strings, string ffg)
+        {
+            for (int vg = 0; vg < strings.Length; vg++)
+                strings[vg] = strings[vg] + ffg;
+            return strings;
+        }
+        public static int[] reverse(int[] res)
+        {
+            Array.Reverse(res);
+            return res;
+        }
+        public static string chexk(int n)
+        {
+            if (n < 0)
+            {
+                return "";
+            }
+            else
+            {
+                string firstname = "su";
+                string mid = string.Empty;
+                string lastname = "tan";
+                for (int ewe = 0; ewe < n; ewe++)
+                    mid += "l";
+
+                string sds = firstname + mid + lastname;
+                return sds;
+            }
+        }
+        public static int flip(int bol)
+        {
+            return 1 - bol;
+        }
+        public static string repla(string rep)
+        {
+            if (rep.Contains("M"))
+            {
+                return rep.Replace("M", "W");
+            }
+            return rep;
+        }
+        public static double smach(double ball, double club)
+        {
+            return ball / club;
+        }
+        public static int code(int[] nums)
+        {
+            int ret = 0;
+            for (int xcx = 0; xcx < nums.Length; xcx++)
+                ret += (int)Math.Pow(nums[xcx], 3);
+            return ret;
+        }
+        public static int howmuch(bool[] ghg)
+        {
+            int cut = 0;
+            for (int ci = 0; ci < ghg.Length; ci++)
+            {
+                if (ghg[ci] == true)
+                {
+                    cut++;
+                }
+            }
+            return cut;
+        }
+        public static int[] canvat(int[] arry1, int[] arry2)
+        {
+            var arry3 = arry1.Concat(arry2).ToArray();
+            return arry3;
+        }
+        public static int numaurgu(params int[] totalp)
+        {
+            return totalp.Length;
+        }
+        public static double yentodoller(int yen)
+        {
+            double doller = yen / 107.5;
+            return Math.Round(doller, 2);
+        }
+        public static string upper(string awa)
+        {
+
+            if (awa == awa.ToUpper())
+            {
+                return "upper";
+            }
+            if (awa == awa.ToLower())
+            {
+                return "lower";
+            }
+            else
+            {
+                return "mixed";
+            }
+
+        }
+        public static string go(int og)
+        {
+            string ioi = "";
+            for (int gog = 0; gog <= og; gog++)
+            {
+                ioi += "_ ";
+
+            }
+            return ioi;
+        }
+        public static int findindex(string[] arys, string sample)
+        {
+            return Array.IndexOf(arys, sample);
+        }
+        public static int wordcount(string simple)
+        {
+            return simple.Split().Count();
+        }
+        public static bool backtohome(string poles)
+        {
+
+            int spole = 0;
+            int npole = 0;
+            int epole = 0;
+            int wpole = 0;
+            foreach (int cu in poles)
+            {
+                if (cu == 'N')
+                {
+                    npole += 1;
+                }
+                if (cu == 'S')
+                {
+                    spole = +1;
+                }
+                if (cu == 'E')
+                {
+                    epole = +1;
+                }
+                if (cu == 'W')
+                {
+                    wpole = +1;
+                }
+            }
+            return spole == npole && wpole == epole;
+        }
+        public static int days(int month, int year)
+        {
+            if (month == 1)
+            {
+                return 31;
+            }
+            if (month == 2)
+            {
+                return 28;
+            }
+            if (month == 2)
+            {
+                return 31;
+            }
+            if (month == 3)
+            {
+                return 30;
+            }
+            if (month == 4)
+            {
+                return 30;
+            }
+            if (month == 4)
+            {
+                return 31;
+            }
+            if (month == 5)
+            {
+                return 30;
+            }
+            if (month == 6)
+            {
+                return 31;
+            }
+            if (month == 7)
+            {
+                return 30;
+            }
+            if (month == 8)
+            {
+                return 31;
+            }
+            if (month == 9)
+            {
+                return 30;
+            }
+            if (month == 10)
+            {
+                return 31;
+            }
+            if (month == 11)
+            { return 30; }
+            if (month == 12)
+            { return 31; }
+            return -1;
+        }
+        public static int syllables(string syb)
+        {
+            return syb.Split('-').Count();
+        }
+        public static bool hurbler(int[] hum, int jum)
+        {
+            if (hum.Contains(jum))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static double resister(int par1, int par2, int par3)
+        {
+            return (1 / par1) + (1 / par2) + (1 / par3);
+
+        }
+        public static int instance(char zan, string sing)
+        {
+            int numm = 0;
+            foreach (char uy in sing)
+            {
+                if (uy == zan)
+                {
+                    numm++;
+                }
+            }
+            return numm;
+        }
+        public static string numtomonth(int mont)
+        {
+            if (mont == 1) { return "january"; }
+            if (mont == 2) { return "february"; }
+            if (mont == 3) { return "march"; }
+            if (mont == 4) { return "april"; }
+            if (mont == 5) { return "may"; }
+            if (mont == 6) { return "june"; }
+            if (mont == 7) { return "july"; }
+            if (mont == 8) { return "august"; }
+            if (mont == 9) { return "september"; }
+            if (mont == 10) { return "october"; }
+            if (mont == 11) { return "november"; }
+            if (mont == 12) { return "december"; }
+            return "no exist";
+        }
+        public static int[] nimtomax(int[] mian)
+        {
+            int max = mian.Max();
+            int min = mian.Min();
+            int[] maxmin = { min, max };
+            return maxmin;
+        }
+        public static int absolute(int[] abss)
+        {
+            return abss.Select(Math.Abs).Sum();
+        }
+        public static double por(int mumber, int exponent)
+        {
+            return Math.Pow(mumber, exponent);
+        }
+        public static int[] give(int[] gi)
+        {
+            return gi;
+        }
+        public static int difer(string o1, string o2)
+        {
+            var counter = 0;
+            for (int i = 0; i < o2.Count(); i++)
+            {
+                if (o1[i] != o2[i])
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        public static string shufal(string don)
+        {
+
+            string[] sli = don.Split(' ');
+            return sli[1] + " " + sli[0];
+        }
+        public static string givenim(string num1, string num2)
+        {
+            if (int.Parse(num1) > int.Parse(num2))
+            {
+                return num1;
+            }
+            else
+            {
+                return num2;
+            }
+        }
+        public static int foctrial(int foc)
+        {
+            int num = 1;
+            for (int i = 1; i <= foc; i++)
+            {
+                num = num * i;
+            }
+            return num;
+            //if (foc == 1)
+            //{
+            //    return foc;
+            //}
+            //else
+            //{
+            //    return foc * foctrial(foc - 1);
+            //}
+        }
+        public static int vowals(string vow)
+        {
+            string filter = "[aeiou]";
+            return Regex.Matches(vow, filter).Count();
+
+        }
+        public static int[] ratrusn(int[] rat)
+        {
+            if (rat == null)
+            {
+                return new int[0];
+            }
+
+            System.Array.Sort(rat);
+            return rat;
+        }
+        public static bool identical(string same)
+        {
+            for (int i = 0; i <= same.Length; i++)
+            {
+                if (same[i] == same[i])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public static string replace(string reo)
+        {
+            return reo.Replace('a', '@').Replace('i', '1').Replace('o', '0');
+        }
+        public static bool cameture(string cam)
+        {
+            if (cam == cam.ToUpper())
+            {
+                return true;
+            }
+            if (cam == cam.ToLower())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string wiyhoutcondition(int caseno)
+        {
+            string[] pick = { "methane", "ethane", "propane", "butane", "pentane", "haxane", "haptane", "octane", "nonane", "decane" };
+            return pick[caseno - 1];
+        }
+        public static int clap(string cl)
+        {
+            string c = "[c]";
+            return Regex.Matches(cl, c).Count();
+        }
+        public static int matche(string ma)
+        {
+            string mi = "[m]";
+            return Regex.Matches(ma, mi).Count();
+        }
+        public static string delet(string de)
+        {
+            return de.Substring(1, de.Length - 2);
+        }
+        public static string doub(int du)
+        {
+            string fir = "bu";
+            string mi = string.Empty;
+            string las = "p";
+            for (int i = 0; i < du; i++)
+            {
+                mi += "r";
+            }
+            string full = fir + mi + las;
+            return full;
+        }
+        public static string path(string pat)
+        {
+            return pat.Split('\\').Last();
+        }
+        public static string print(string pri)
+        {
+            string word = "....";
+            return word + pri[0] + pri[1] + word + pri[0] + pri[1] + word + pri;
+        }
+        public static string multply(int mul)
+        {
+
+            if (mul % 3 == 0)
+            {
+                return " buzz";
+            }
+            if (mul % 5 == 0)
+            {
+                return "fizz";
+            }
+            return mul.ToString();
+        }
+        public static string repit(string rep, int pe)
+        {
+            //if (pe==1)
+            //{
+            //    return rep;
+            //}
+            //return rep+repit(rep,pe-1);
+            string a = string.Empty;
+            for (int i = 1; i <= pe; i++)
+            {
+                a += rep;
+            }
+            return a;
+        }
+        public static string date(string da)
+        {
+            string[] de = da.Split('/');
+            return string.Format(de[2] + '/' + de[1] + '/' + de[0]);
+
+        }
+        public static string get(string left, string right)
+        {
+            return left[0].ToString().ToUpper() + left.Substring(1) + right;
+        }
+        public static int detnum(int get)
+        {
+            if (get == 0)
+            {
+                return 0;
+            }
+            return get + detnum(get - 1);
+        }
+        public static string doubstring(string dou)
+        {
+            string n = string.Empty;
+            for (int i = 0; i < dou.Length; i++)
+            {
+                string w = (n += dou[i].ToString()) + (n += dou[i].ToString());
+            }
+            return n;
+        }
+      
+        public static string lastdoubl(string la, int dob)
+        {
+            return la + new string(la[la.Length - 1], dob - 1);
+        }
+        public static string reversr(string ret)
+        {
+            char[] arry = ret.ToCharArray();
+            Array.Reverse(arry);
+            return new string(arry).ToUpper();
+        }
+        public static string order(string or)
+        {
+            char[] r = or.ToCharArray();
+            Array.Reverse(r);
+            return new string(r);
+        }
+        public static int[] evennum(int[] ev)
+        {
+
+            for (int i = 0; i < ev.Length - 1; i++)
+            {
+                if (ev[i] % 2 == 0)
+                {
+                    System.Array.Sort(ev);
+                }
+            }
+            return ev;
+        }
+        public static bool average(int[] ave, int avr)
+        {
+            int a = 0;
+            for (int i = 0; i < ave.Length; i++)
+            {
+                int we = a += ave[i];
+                if (we % avr == 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public static string longe(string word, int nums)
+        {
+            char[] a = word.ToCharArray();
+            string r = string.Empty;
+            for (int i = 0; i < a.Length; i++)
+            {
+                string w = (r += a[i].ToString()) + (r += a[i].ToString()) + (r += a[i].ToString());
+            }
+            return r;
+        }
+        public static double mean(int[] meai, int to)
+        {
+            double u = 0;
+            for (int i = 0; i < meai.Length; i++)
+
+                u += meai[i];
+            return (u / to);
+        }
+        public static string[] four(string[] fo)
+        {
+            string t = string.Empty;
+            for (int i = 0; i < fo.Length; i++)
+            {
+                if (fo[i].Length == 4)
+                {
+                    string e = t += fo[i];
+                    System.Array.Sort(fo);
+                }
+            }
+            return fo;
+        }
+        public static double percentage(int imposter, int player)
+        {
+            double t = (double)imposter / player * 100;
+
+            return (Math.Round(t, 2));
+        }
+        public static bool cheaking(string che)
+        {
+            for (int i = 0; i < che.Length; i++)
+            {
+                if (che.Contains('x') == che.Contains('o'))
+                {
+
+                    return true;
+                }
+
+            }
+            return false;
+        }
+        public static int[] hash(string has)
+        {
+            string e = "[#]";
+            string u = "[+]";
+            int y = Regex.Matches(has, u).Count();
+            int f = Regex.Matches(has, e).Count();
+            int[] c = { f, y };
+            return c;
+        }
+        public static string arrangr(string ara)
+        {
+            char[] er = ara.ToCharArray();
+            System.Array.Sort(er);
+            return new string(er);
+        }
+        public class rectangular
+        {
+            public double Side1;
+            public double Side2;
+            public rectangular(double side1, double side2)
+            {
+                Side1 = side1;
+                Side2 = side2;
+            }
+
+        }
+        public class circle
+        {
+            public circle(double rad)
+            {
+
+                _rad = rad;
+            }
+            public double GetArea()
+            {
+                return Math.PI * _rad * _rad;
+            }
+            public double GetPerameter()
+            {
+                return 2 * Math.PI * _rad;
+            }
+            private double _rad;
+        }
+        //public static int[] dublicate(int[] deb)
+        //{
+        //    Array.Sort(deb);
+        //    var j = 0;
+        //   for (int i=0; i< deb.Length-1;i++)
+        //   {
+        //        if (deb[i] != deb[i +1]) 
+        //        deb[j++] = deb[i];
+        //   }
+        //    deb[j++] = deb[deb.Length-1] ;
+        //    return 
+        //}
+        public static string space(string spa)
+        {
+            string a = string.Empty;
+            char[] aps = spa.ToCharArray();
+            for (int i = 0; i < aps.Length; i++)
+            {
+                a += aps[i] + " ";
+
+            }
+
+            return new string(a);
+        }
+        public static bool palindorm(string pal)
+        {
+
+            char[] aps = pal.ToCharArray();
+            Array.Reverse(aps);
+            string ne = new string(aps);
+            if (pal.Equals(ne))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string lastfolder(string folder)
+        {
+            string[] jin = folder.Split('\\');
+            return jin[jin.Length - 1].ToString();
+        }
+        public static string replace(string wrd, char rep)
+        {
+            return wrd.Replace('a', rep).Replace('e', rep).Replace('i', rep).Replace('o', rep).Replace('u', rep);
+        }
+        //public static bool chek(string first, string last, string word)
+        //{
+        //    string[] x = { first, last, word };
+        //    string[] y = x;
+        //    if (x == Array.Sort(x.ToImmutableSortedDictionary(y)))
+        //}
+        public static bool redx(string red)
+        {
+            try
+            {
+                for (int i = 0; i < red.Length - 1; i++)
+                {
+                    if (red.Length - 1 != i)
+                    {
+                        if (red[i] == red[i + 1]) { return true; }
+                    }
+
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+        public static int qudat(int a ,int b,int c)
+        {
+            int tal = (b * b) - 4 * a * c;
+            if (tal <0)
+            {
+                return 0 ;
+            }
+            if (tal==0)
+            {
+                return 1;
+            }
+            return 2;
+        }
+        public static bool modoless(int a ,int b ,int c)
+        {
+            int e = a * b;
+            return c.ToString().ToCharArray().Last() == e.ToString().ToCharArray().Last();
+            //return ((a % 10) * (b % 10) % 10) == c % 10;
+        }
+        public static int indexx(int[] d,int fi)
+        {
+            int a = -1;
+            for (int i = 0; i < d.Length; i++)
+            {
+                if (d[i] == fi)
+                {
+                    a += i + 1;
+                }
+
+            }
+            return a;
+        }
+        public static int missing(int[] piece)
+        {
+            return Enumerable.Range(1, 10).Except(piece).First();
+        }
+        public static bool great(int rt)
+        {
+            char[] fi=rt.ToString().ToCharArray();
+            Array.Reverse(fi);
+            if(int.Parse(fi)<rt)
+            {
+                return true;
+            }
+            return false; 
+        }
+        public static bool zipcode(string zip)
+        {
+            if (zip.Length == 5 && zip.All(Char.IsDigit))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string vowalremoved(string remov)
+        {
+            return remov.Replace('a',' ').ToLower().Replace('e',' ').ToLower().Replace('i',' ').ToLower().Replace('o',' ').ToLower().Replace('u',' ').ToLower();
+        }
+        public static string unicode(string co)
+        {
+            return Regex.Replace(co, @"[^a-zA-Z]+","");
+        }
+        public static double magnitude(int[] mag)
+        {
+            //var quads = mag.Select(n => n * n);
+            return Math.Sqrt(mag.Sum(n => n * n));
+        }
+        public static string countnum(string tal)
+        {
+            var digits = tal.Count(char.IsDigit);
+                var letter = tal.Count(char.IsLetter);
+            return "letter = " + letter + ", digits = " + digits;
+        }
+        public static int[] cumulate(int[] cum)
+        {
+            
+            for(int i=1; i<cum.Length; i++)
+            {
+                cum[i] = cum[i] += cum[i -1];
+            }
+            return cum;
+        }
+        public static int[] table(int num, int len)
+        {
+            int[] w=new int[len];
+            
+            for (int i = 0; i < len; i++)
+            {
+                w[i] = num * (i + 1);
+            }
+            return w;
+        }
+        public static string cases(string re)
+        {
+            char[] t = re.ToCharArray();
+            string f = string.Empty;
+            foreach (char x in t)
+            {
+                if (char.IsLower(x))
+                    f += x.ToString().ToUpper();
+                else if (char.IsUpper(x))
+                    f += x.ToString().ToLower();
+                else
+                    f += x;
+            }
+            return f;
+        }
+        public static bool parameter(int f,string s)
+        {
+            return (f.Equals(s));
+        }
+        public static int[] allindex(string b)
+        {
+            List<int> r=new List<int>();
+            for(int i=0; i<b.Length; i++)
+            {
+                if (char.IsUpper(b[i]))
+                {
+                    r.Add(i);
+                }
+            }
+            return r.ToArray();
+        }
+        public static string bomb(string bo)
+        {
+            if (bo.Contains("bomb"))
+            {
+                return "duck";
+            }
+            return "There is no bomb";
+        }
+        public static string?[] convert(object[] tr)
+        {
+            string?[] er = Array.ConvertAll(tr, x => x.ToString());
+            return er;
+        }
+        public static int[] twoarray(int[] a, int[] b, int[] c)
+        {
+            int d = a.Max();
+            int e = b.Max();
+            int f = c.Max();
+            int[] g = { d, e, f };
+            return g;
+        }
+        public static int collatz(int cl)
+        {
+            int e = cl % 2 < 1 ? cl / 2 : cl * 3 + 1;
+            return cl > 2 ? 0 : collatz(e) + 1;
+        }
+        public static int charcode(char c)
+        {
+            string i=c.ToString().ToUpper();
+            char p = char.Parse(i);
+            int f = (int)p;
+            return f;
+        }
+        //String input = "8";
+        //String output = Convert.ToInt32(input, 2).ToString();
+        public static int binary(int k)
+        { 
+            string f = Convert.ToString(k,2);
+            return f.Where(x => x == '1').Count();   
+        }
+        public static int[] allarray(int[] al)
+        {
+            int a = 0;
+            int b = 0;
+            for (int i = 0; i < al.Length; i++)
+            {
+                if (al.Length == 0)
+                {
+                    return new int[0];
+                }
+                if (al[i] > 0)
+                {
+                    a++;
+                }
+                if (al[i] < 0)
+                {
+                    b += al[i];
+                }
+
+            }
+            int[] e = { a, b };
+            return e;
+        }
+        public static bool ATM(string at)
+        {
+            if (at.Length == 4 && at.All(char.IsDigit)) 
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool more1(string gr)
+        {
+            string[] r = gr.Split('/');
+            int[] g = Array.ConvertAll(r, s => int.Parse(s));
+            int d = g[1] / g[0];
+            if (d>1)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string middle(string m)
+        {
+            if (m.Length%2 == 0)
+            {
+                return m[(m.Length / 2) - 1].ToString() + m[m.Length/2].ToString();
+            }
+            return m[m.Length / 2].ToString();
+        }
+        public static int difference(int r)
+        {
+            return 2 * r * r;
+        }
+        public static byte[] GetUTF()
+        {
+           return new byte[] { 0xb0 };
+        }
+        public static string max(string nu)
+        {
+            string[] d = nu.Split(" ");
+            int[] v=Array.ConvertAll(d,o=>int.Parse(o));
+            int max = v.Max();
+            int min = v.Min();
+            string c=max.ToString()+" "+min.ToString();
+            return c;
+        }
+        public static bool palimodo(int pal)
+        {
+            char[] c = pal.ToString().ToCharArray();
+            System.Array.Reverse(c);
+            string  x = new string(c);
+            if(int.Parse(x).Equals(pal))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string credit(string ce)
+        {
+            string o = string.Empty;
+            string last = ce.Substring(ce.Length - 4);
+            for (int i=0;i<ce.Length-4;i++)
+            {
+                o += "#";
+            }
+            return o+last;
+        }
+        public static string coma(int co)
+        {
+            string s = co.ToString();
+            for (int i = 3; i < s.Length - 1; i=i+4)
+            {
+                s = s.Insert(i,",");
+            }
+            return s;
+        }
+        public static string eo(string o)
+        {
+            string e=o.Replace('e', 'o').ToUpper();
+            return e;
+        }
+        public static int[] point(object[] ob)
+        {
+            return ob.OfType<int>().ToArray();
+        }
+        public static int[] desending(int[] des)
+        {
+            Array.Sort(des);
+            System.Array.Reverse(des);
+            return des;
+        }
+        public static int tetra(int te)
+        {
+            return te * (te + 1) * (te + 2) / 6;
+        }
+        public static string nemo(string ne)
+        {
+            string[] s = ne.Split(" ");
+            int a=Array.IndexOf(s,"nemo");
+            return "i find nemo at " + a.ToString() + "!";
+        }
+        public static bool Isogram(string iso)
+        {
+            return iso.ToLower().Distinct().Count() == iso.Length;
+        }
+        public static bool Prime(int x)
+
+        {
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0)
+                {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+        public static bool firstlast(string fi,string la)
+        {
+            char f = fi.Last();
+            char l = la.First();
+                return f.Equals(2);
+        }
+        public static int pentagonal(int pen)
+        {
+            int p = 1;
+            for(int i=1;i<pen; i++)
+            {
+                p += (i * 5);
+            }
+            return p;
+        }
+        public static int lowsum(int[] su)
+        {
+            System.Array.Sort(su);
+            return su[0] + su[1];
+        } 
+        public static double mypi(int n)
+        {
+            return (Math.Round(Math.PI, n));
+        }
+        public static bool sysmentic(int sy)
+        {
+            char[] c = sy.ToString().ToCharArray();
+            System.Array.Reverse(c);
+            string d = new string(c);
+            if (d.Equals(sy))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool phone(string ph)
+        {
+            string l = "(123)";
+            if (Regex.IsMatch(ph,l))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string dash(string d)
+        {
+            string e = string.Empty;
+            for(int i=0;i<d.Length;i++)
+            {
+                if (char.IsLetterOrDigit(d[i]))
+                {
+                    e += d[i];
+                }
+                if (char.IsWhiteSpace(d[i]))
+                {
+                    e += d[i];
+                }
+            }
+            //@"[^\w \-]",
+            return e;
+        }
+        public static List<int> table0(int num,int le)
+        {
+            List<int> ta = new List<int>();
+            for(int i=0;i<10;i++)
+            {
+                ta.Add(num * (i + 1));
+            }
+            return ta;
+        }
+        public static string?[] checknull(object[] any)
+        {
+            for (int i = 0; i < any.Length; i++)
+            {
+                if (any[i] == null)
+                {
+                    any[i] = "_";
+                }
+            }
+            return Array.ConvertAll(any, converter: e => e?.ToString()).ToArray();
+            //try
+            //{
+            //    return Array.ConvertAll(any,e => e.ToString()).ToArray();
+            //}
+            //catch(ArgumentNullException e)
+            //{
+            //    return e;
+            //}   
+        }
+        public static bool power(string p,int n)
+        {
+            var o = Math.Pow(Math.Abs(n), 2);
+            if(int.Parse(p)==o)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string vowal(string vw)
+        {
+            if(vw.EndsWith("!"))
+            {
+                return vw.TrimEnd('!')+"!";
+            }
+            if(vw.EndsWith("?"))
+            {
+                return vw.TrimEnd('?')+"?";
+            }
+            return vw;
+        }
+        public static bool Friday13th(int month, int year)
+        {
+            DateTime d = new DateTime(year, month, 13);
+            return d.DayOfWeek == DayOfWeek.Friday;
+        }
+        public static string centrcy(int cen)
+        {
+            if (cen >= 1000 && cen <= 1099) return "11th century";
+            if (cen >= 1100 && cen <= 1199) return "12th century";
+            if (cen >= 1200 && cen <= 1299) return "13th century";
+            if (cen >= 1300 && cen <= 1399) return "14th century";
+            if (cen >= 1400 && cen <= 1499) return "15th century";
+            if (cen >= 1500 && cen <= 1599) return "16th century";
+            if (cen >= 1600 && cen <= 1699) return "17th century";
+            if (cen >= 1700 && cen <= 1799) return "18th century";
+            if (cen >= 1800 && cen <= 1899) return "19th century";
+            if (cen >= 1900 && cen <= 1999) return "20th century";
+            if (cen >= 2000 && cen <= 2099) return "21th century";
+            return "Your year is coming soon! ";
+        }
+        public static bool email(string email)
+        {
+            if(email.Contains("@edabit.com"))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static string linq(string ca)
+        {
+            //string e = string.Empty;
+            //string[] a=ca.Split(' ');
+            //for(int i=0;i<a.Length;i++)
+            //{
+            //    e+= char.ToUpper(a[0]);
+            //}
+            return string.Join(" ",ca.Split().Select(s => char.ToUpper(s[0]) + s.Substring(1))).ToString();
+        }
+        public static int Potatoes(string pa)
+        {
+            int a = 0;
+            if (pa.ToLower().Contains("potatoes"))
+            {
+                a++;
+            }
+            return a;
+        }
+        public static int[] smallest(int[] re)
+        {
+            Array.Sort(re);
+            int n = re.Min();
+            List<int> t= re.ToList();
+            if(re.Length==0)
+            {
+                return new int[0];
+            }      
+            t.Remove(n);
+            return t.ToArray();
+        }
+        //public static string printt(string s)
+        //{
+        //    string w=string.Empty;
+        //    char[] q= s.ToCharArray();
+        //    for(int i=0;i<s;i++)
+        //    {
+        //        
+        //    }
+        //    return w;
+        //}
+        public static int operato(string s)
+        {
+            DataTable table =new DataTable();
+            return (int)table.Compute(s, " ");
+        }
+        public static int poless(int x,int y)
+        {
+            int t = (int)((x + y) / 5);
+            return x + y + t;
+        }
+        public static int sequence(int n)
+        {
+            return (90 + 30 * (n - 1)) * n;
+        }
+        public static string bomb(int[] b)
+        {
+            for(int i=0; i<b.Length; i++)
+            {
+                if (b[i] == 7)
+                
+                    return "Bomd!"; 
+            }
+            return "There is no 7 in array";
+        }
+        public static string fiveor(string s)
+        {
+            string[] z=s.Split(" ");
+            string x = string.Empty;
+            for (int i=0; i<z.Length; i++)
+            {
+                string l = (z[i].Length >= 5) ?
+                     x +=new string(z[i].Reverse().ToArray())+" ":
+
+                    x += z[i]+" ";
+            }
+            return x;
+        }
+        public static int charcode(string x,string y)
+        {
+            int a = 0;
+            int b = 0;
+            for (int i = 0; i < x.Length; i++)
+            {
+                a += (int)x[i];
+            }
+            for (int i = 0; i <y.Length; i++)
+            {
+                b += (int)y[i];
+            }
+            int result = a - b;
+            return Math.Abs(result);
+        }
+        public static string oddish(int o)
+        {
+            char[] c = o.ToString().ToCharArray();
+            int total = 0;
+            for (int i = 0; i < c.Length; i++)
+            {
+                total += c[i];
+            }
+            if(total%2==0)
+            {
+                return "Evenish";
+            }
+            return "oddish";
+        }
+        public static int diffsum(int[] s)
+        {
+            int neg = 0;
+            int pos = 0;
+            for (int i = 0; i <s.Length; i++)
+            {
+                if (s[i]>0)
+                {
+                    pos += s[i];
+                }
+                if (s[i]<=0)
+                {
+                    neg += (s[i]);
+                }
+            }
+            int result = (neg > pos)?
+                neg: pos;
+            return result;
+        }
+        public static bool perfect(int a)
+        {
+            int  e=1;
+            for(int i=2;i<a;i++)
+            {
+                i *= e;  
+            }
+            bool result= (e==a)?
+                true: false;
+            return result;
+        }
+        public static int count1(string[] s)
+        {
+            int c = 0;
+            string g=string.Empty;
+            for (int i = 0; i < s.Length; i++)
+            {  
+                for(int ii = 0; ii < s[i].Length;ii++)
+                 if (s[i][ii] == '0')
+                 {
+                        c++;
+                 }
+                else
+                { 
+                    break;
+                }
+                g += c.ToString();
+                c = 0;
+            }
+            return int.Parse(g);
+        }
+        public static bool checkprime(List<int> gen , int num)
+        {
+            if(gen.Contains(num))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool Prime0(int x)
+        {
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static int[,] demention(int n)
+        {
+            int[,] p = new int[n, n];
+            for (int i = 0; i < n; i++)
+            {
+                for (int l = 0; l < n; l++)
+                {
+                    p[i, l] = n;
+                }
+            }
+            return p;
+        }
+        public static bool analogram(string s1,string s2)
+        {
+            string s1mid = string.Empty;
+            string s2mid = string.Empty;
+            if (s1.Length % 2 == 0)
+            {
+                s1mid += (s1[(s1.Length - 1) / 2]) + (s1[(s1.Length / 2)]);
+            }
+            else { s1mid += s1[s1.Length / 2] + s1[(s1.Length / 2) + 1]; }
+
+            if (s2.Length % 2 == 0)
+            {
+                s2mid += (s2[(s2.Length - 1) / 2]) + (s2[(s2.Length / 2)]);
+            }
+            else { s2mid += +s2[s2.Length / 2] + s2[(s2.Length / 2) + 1]; }
+
+            if(s1mid.Equals(s2mid))
+            { return true; }
+            return false;
+        }
+        public static int sumprime(int[]  pri)
+        {
+            int sum = 0;
+            for (int i = 0; i < pri.Length; i++)
+            {
+                sum += pri[i];
+            }
+            return sum;
+        }
+        public static string telephone(string text)
+        {
+            text = Regex.Replace(text, "[abc]", "2");
+            text = Regex.Replace(text, "[def]", "3");
+            text = Regex.Replace(text, "[ghi]", "4");
+            text = Regex.Replace(text, "[jkl]", "5");
+            text = Regex.Replace(text, "[mno]", "6");
+            text = Regex.Replace(text, "[pqrs]", "7");
+            text = Regex.Replace(text, "[tuv]", "8");
+            text = Regex.Replace(text, "[wxyz]", "9");
+            return text;
+        }
+        public static string saponge(string sa )
+        {
+            string em = string.Empty;
+            string[] se = sa.Split(" ");
+            for (int i = 0;i < se.Length;i++)
+            {
+                string s= se[i];
+                for(int ii = 0; ii < s.Length; ii=ii+2)
+                {
+                    if (char.IsLower(s[ii]))
+                    {
+                        se[i]=em += s[ii].ToString().ToUpper();
+                    }
+       
+                }
+            }
+            return em;
+        }
+        public static string incompitable(string co)
+        {
+            char e =co.Last();
+            char d = co.First();
+            if(co.Length<2&&co.All(char.IsDigit)&&co.Length>=2)
+            {
+                return "incompatiable";
+            }
+            if(co.Last()==co.First())
+            {
+                return "Two's a pair.";
+            }
+            return Regex.Replace(co, d.ToString(),e.ToString()).Replace(d, co[0]);
+        }
+        public static string[] capilization(string[] cap)
+        {
+            for (int i=0;i<cap.Length;i++)
+            {
+                cap[i] = cap[i].First().ToString().ToUpper() + cap[i].Substring(1);
+            }
+            return cap;
+        }
+        public static bool die(int[] di)
+        {
+            var X = 0;
+            for(int i=0;i<di.Length;i++)
+            {
+                X += (int)(Math.Pow(di[i], 2));
+            }
+            double X2 = X / 100;
+            bool result = (X2 < 11.0705) ?
+                true : false;
+            return result;
+        }
+        public static int integral(int b,int m ,int n )
+        {
+           return (int)Math.Pow(n, b + 1) - (int)Math.Pow(m, b + 1);
+        }
+        //public static int[] powprime(int prim,int nu)
+        //{
+        //    int[] n = new int[4];
+        //    for (int i=0;i<100;i++)
+        //    {
+
+        //    }
+
+        //}
+        public static string revsrses(string l)
+        {
+            char[] s = l.ToCharArray();
+            System.Array.Reverse(s);
+            return new string(s) + l;
+        }
+        public static string perfect0(string txt,string voval)
+        {
+            char[] txtarry = txt.ToCharArray();
+            char[] vovolarry=voval.ToCharArray();
+            int j = 0;
+            for(int i =0;i<txtarry.Length;i++)
+            {
+                if (txtarry[i]=='*')
+                {
+                    txtarry[i] = vovolarry[j];
+                    j++;
+                }
+            }
+            string a = string.Join("", txtarry);
+            return a;
+        }
+        public static string qualified(int[] q, int time)
+        {
+            int tot = 0;
+           int a= (q[0] < 6 && q.Length == 8)?  q[0] + tot : time += tot;
+            if (q[1] < 6 && q.Length == 8) { q[1] += tot; } else time += tot;
+            if (q[2] <= 10 && q.Length == 8) { q[2] += tot; } else time += tot;
+            if (q[3] <= 10 && q.Length == 8) { q[3] += tot; } else time += tot;
+            if (q[4] <= 15 && q.Length == 8) { q[4] += tot; } else time += tot;
+            if (q[5] <= 15 && q.Length == 8) { q[5] += tot; } else time += tot;
+            if (q[6] <= 20 && q.Length == 8) { q[6] += tot; } else time += tot;
+            if (q[7] <= 20 && q.Length == 8) { q[7] += tot; } else time += tot;
+
+            if (tot <= time && q.Length == 8)
+            {
+                return "Qualified";
+            }
+            return "Disqualified";
+        }
+        public static bool smooth(string mo)
+        {
+            string[] s = mo.Split(" ");
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+                if (s[i].Last().Equals(s[i + 1].First()))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public static bool conservative(int[] list)
+        {
+            Array.Sort(list);
+            for(int i=0; i < list.Length-1; i++)
+            {
+                if (list[i + 1] - list[i] != 1)
+                {
+                    return false;
+                }
+            }
+            return true;  
+        }
+        public static bool hexcode(string s)
+        {
+            return Regex.IsMatch(s, @"[#][0-9a-fA-F]{6}$");
+        }
+        public static bool bigram( string[] bigram ,string[] words)
+        {
+            int i = 0;
+            for (int ii = 0; ii < words.Length; ii++)
+            {
+                for (int j = 0; j < bigram.Length; j++)
+                {
+                    if (words[ii].Contains(bigram[j]))
+                    {
+                        i++;
+                    }
+                    
+                }
+            }
+            return i == bigram.Length ?
+                true : false;           
+        }
+        public static double[] equation(int a,int b,int c)
+        {
+            int x=-b/(2*a);
+            double y1 = (a * x * x) + (b * x) + c;
+            double x1 = Math.Sqrt(y1-(b*x)-c);
+            double[] result = {Math.Round( x1,2), y1 };
+            return result;
+        }
+        public static int nextprime(int p)
+        {
+            //for (int i = 2; i < p; i++)
+            //{
+            //    if (p % i == 0)
+            //    {
+            //        return p;
+            //    }
+            //}
+            if (p%2==0||p%2!=0)
+            {
+                for (int j= 2; j < p; j++)
+                {
+                    if (p % j == 0)
+                    {
+                        p++; j = 2; 
+                    }
+                }
+            }
+            return p;
+        }
+        public static string hex(string h)
+        {
+            string e = string.Empty;
+            byte[] a = Encoding.ASCII.GetBytes(h);
+                e += System.Convert.ToHexString(a);
+            return e;   
+        }
+        public static bool palindrome(string s)
+        {
+
+            int c = 0;
+            char[] a = s.ToCharArray();
+            System.Array.Reverse(a);
+            char[] x = s.ToCharArray();
+            for (int i = 0; i < x.Length; i++)
+            {
+                if (a[i]==(x[i]))
+                {
+                    i++;
+                }
+                else
+                c++;
+            }
+            return (c == 1) ?
+              true : false;
+        }
+        public static string afterweek(string date)
+        {
+            string[] a = date.Split('/');
+            int i = int.Parse(a[0].ToString());
+            int w = i + 7;
+            return date.Replace(a[0], w.ToString());
+        }
+        public static string reversecoding(string z)
+        {
+           
+            string q = "";
+            for (int j = 0; j < z.Length; j += 2)
+            {
+                for (int i = 0; i < int.Parse(z[j + 1].ToString()); i++)
+                {
+                    q += z[j];
+                }
+            }
+            return q;
+
+        }
+        public static bool Prime1(int x)
+        {
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static int  sumofprime(int f)
+        {
+            int total = 0;
+            for (int i = 2; i <= f; i++)
+            {
+                if(Prime1(i))
+                {
+                    total += i;
+                }
+            }
+            return total;
+        }
+        public static List<int> allarray (int end)
+        {
+            List<int> prime = new List<int>();
+            List<int> even = new List<int>();
+            List<int> odd = new List<int>();
+            for (int i = 2; i < end; i++)
+            {
+                if(Prime1(i))
+                {
+                    prime.Add(i);
+                }
+                if(i%2== 0)
+                {
+                    even.Add(i);
+                }
+                if (i % 2 != 0)
+                {
+                    odd.Add(i);
+                }  
+            }
+            return prime;
+        }
+        public static int infinite(int a ,int b)
+        {
+            try
+            {
+                int result = a / b;
+                return result;
+            }
+            catch(ArithmeticException)
+            {
+                return -1;
+            }
+           
+        }
+        public static int  skocks(string k)
+        {
+            int a = 0;
+            char[] c = k.ToCharArray();
+            Array.Sort(c);
+            for(int i=1;i<c.Length;i++)
+            {
+                if (c[i] == c[i-1])
+                {
+                    a++;
+                    i++;
+                }
+            }
+            return a;
+        }
+        class employes
+        {
+            public  string ?name { get; set; }
+            public  int age { get; set; }
+            public  int salary { get; set; }
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(skocks("CABBACCC"));
+            Console.WriteLine(infinite(1,0));
+            var tyt=(allarray(97));
+            foreach (var i in tyt)
+            {
+                Console.WriteLine(i);
+            }
+
+            employes emp1 = new employes()
+            {
+                name = "ali",
+                age = 18,
+                salary = 22000
+            };
+            employes emp2 = new employes()
+            {
+                name = "ahmad",
+                age = 23,
+                salary = 12000
+            };
+            employes emp3 = new employes()
+            {
+                name = "salman",
+                age = 19,
+                salary = 19000
+            };
+            List<employes> emplist = new List<employes>();
+            emplist.Add(emp1);
+            emplist.Add(emp2);
+            emplist.Add(emp3);
+            List<employes> emps =new List<employes>(emplist.Where(f=>f.age<20));
+            foreach ( employes i in emps)
+            {
+                Console.WriteLine("name is : {0} Age is : {1} salary is : {2}",i.name,i.age,i.salary);
+                //Console.WriteLine(emplist.Where(f => f.age < 20));
+            }
+            Console.WriteLine(sumofprime(97));
+            Console.WriteLine(reversecoding("A4B5C2"));
+            Console.WriteLine(afterweek("12/03/2020"));
+            Console.WriteLine(palindrome("abcdaaa"));
+            Console.WriteLine(hex("hello world"));
+            Console.WriteLine(nextprime(11));
+            var cn=(equation(1, 0, 25));
+            foreach (var i in cn)
+            {
+                Console.WriteLine(i);
+            }
+            string[] bigram1 = new string[] { "at", "be", "th", "au" };
+            string[] words1 = new string[] { "beautiful", "the", "hat" };
+            Console.WriteLine(bigram(bigram1,words1));
+            Console.WriteLine(hexcode("#cd5c5c"));
+            int[] ern = new int[] { 5, 1, 4, 3, 2, 8 };
+            Console.WriteLine(conservative(ern));
+            Console.WriteLine(smooth("Marta appreciated deep perpendicular right trapezoids"));
+            int[] qual = new int[] { 5, 6, 10, 10, 25, 15, 20, 20 };
+            Console.WriteLine(qualified(qual,120));
+            Console.WriteLine(perfect0("wh*r* d*d my v*w*ls g*","eeioeo"));
+            Console.WriteLine(revsrses("123"));
+            Console.WriteLine(integral(0,2,5));
+            int[] dei=new int[] {44,52,33,40,41,30};
+            int[] cb = new int[dei.Length];
+            for(int i=0;i<dei.Length;i++)
+            {
+                cb[i]=dei[i] - 100;
+            }
+            Console.WriteLine(die(cb));
+            string[] fv = new string[] { "sultan", "ali", "ahmad", "usman" };
+            var xz = capilization(fv);
+            foreach (var i in xz)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(incompitable("Cat, dog, and mouse."));
+            Console.WriteLine(saponge("OMG this website is awesome!"));
+            Console.WriteLine(telephone("123 4 gt 789"));
+            int[] pri = new int[] { 2, 5, 7, 11, 13, 17, 19, 23, 27 };
+            Console.WriteLine(sumprime(pri));
+            Console.WriteLine(analogram("Nope", "Note")); 
+            var v = demention(3);
+            foreach ( var i in v)
+            {
+                Console.WriteLine(i);
+            }
+            int num1 = 97;
+            
+            List<int> jenn = new List<int>();
+            for (int i = 2; i<=num1; i++)
+            {
+                if (Prime0(i))
+                {
+                    jenn.Add(i);
+                }
+            }
+            Console.WriteLine(checkprime(jenn, 97));
+           
+            string[] m = new string[] {"0000---0","000--0"};
+            Console.WriteLine(count1(m));
+            Console.WriteLine(perfect(24));
+            int[] sdd = new int[] { 1, 2, 3, 4, 0, 0, -3, -2 };
+            Console.WriteLine(diffsum(sdd));
+            Console.WriteLine(oddish(4433));
+            Console.WriteLine(charcode("sharp", "sharq"));
+            Console.WriteLine(fiveor("there is no money"));
+            int[] cvc = new int[] { 1, 2, 3, 4, 5, 6 };
+            Console.WriteLine(bomb(cvc));
+            Console.WriteLine(sequence(2));
+            Console.WriteLine(poless(11,8));
+            Console.WriteLine(operato("1+1"));
+            Console.WriteLine(phone("123 234 567"));
+            /*Console.WriteLine(printt("sultan"))*/
+            ;
+            int[] lol = new int[] { 4,6, 8, 4, 2, 4, 7 };
+            var zaa = smallest(lol);
+            foreach (var i in zaa)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(Potatoes("Potatoesis sogood"));
+            Console.WriteLine(email("sultan@gmail.com"));
+            Console.WriteLine(centrcy(1278));
+            Console.WriteLine(Friday13th(4,2021));
+            Console.WriteLine(vowal("what is that???????"));
+            Console.WriteLine(power("4",2));
+            var rrt=(table0(7,5));
+            foreach (var i in rrt)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(dash("d0ne i$ b@ck"));
+            
+            Console.WriteLine(sysmentic(234));
+            Console.WriteLine(mypi(12));
+            int[] po = new int[] { 9, 5, 3, 1, 2, 4, 8 };
+            Console.WriteLine(lowsum(po));
+            Console.WriteLine(pentagonal(2));
+            Console.WriteLine(firstlast("and", "dad"));
+            Console.WriteLine(Prime(1));
+            Console.WriteLine(Isogram("pasSword"));
+            Console.WriteLine(nemo("finding nemo is a animation movie"));
+            Console.WriteLine(tetra(2));
+            int[] nhh = new int[] { 6, 2, 8, 7, 8, 0, 1, 3, 5, 4, 9 };
+            var ij = desending(nhh);
+            foreach (var i in ij)
+            {
+                Console.WriteLine(i);
+            }
+            object[] vg = new object[] { 12, 4, 5, "3", "12" };
+            var vn = point(vg);
+            foreach (var i in vn) 
+            {
+                Console.WriteLine(i);
+
+
+            }
+            Console.WriteLine(eo("hello world"));
+            Console.WriteLine(coma(1000000000));
+            Console.WriteLine(credit("67367463464367"));
+            Console.WriteLine(palimodo(232));
+            Console.WriteLine(max("1 2 3 4 5 6 7 8 9"));
+            Console.WriteLine(difference(5));
+
+            var vvt=(GetUTF());
+            foreach (var i in vvt)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(middle("sultan"));
+            Console.WriteLine(more1("1/2"));
+            Console.WriteLine(ATM("2323"));
+
+            int[] nj = new int[] { 1, 2, 3, -4, -5, -6 };
+            var gt = allarray(nj);
+            foreach (var i in gt)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine(binary(88));
+            Console.WriteLine(charcode('a'));
+            Console.WriteLine(collatz(10));
+
+            int[] xs = new int[] { 3, 5, 65, 3, 7, 34, 67, 8 };
+            int[] bh = new int[] { 43, 56, 89, 32 };
+            int[] za = new int[] { 34, 7, 5, 4, 45, 54, 66, 7 };
+            var cv = twoarray(xs, bh, za);
+            foreach (var i in cv)
+            {
+                Console.WriteLine(i);
+            }
+
+            object[] rf = new object[] { 1, 2, "3", "4" };
+            var bm = convert(rf);
+            foreach (var item in bm)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(bomb("There is bomb"));
+            
+            var fft=(allindex("Ali Is Boy"));
+            foreach (var i in fft)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(parameter (4,"5"));
+            Console.WriteLine(cases("I have two shoes"));
+
+            var dr=(table(7,5));
+            foreach (var item in dr)
+            {
+                Console.WriteLine(item);
+            }
+           
+            var vt = new int[] { 1, 2, 3 };
+            var tv = cumulate(vt);
+            foreach(int i in tv)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(countnum("i have 10 sheeps"));
+            int[] vd = new int[] { 5, 4 }; 
+            Console.WriteLine(magnitude(vd));
+            Console.WriteLine(unicode("b@%&$)o&#^#o@$%^m"));
+            Console.WriteLine(vowalremoved("I have a goat"));
+            Console.WriteLine(zipcode("24 67"));
+            Console.WriteLine(great(43));
+            int[] pie = new int[] { 1, 2, 4, 5, 6, 7, 8, 9, 10 };
+            Console.WriteLine(missing(pie));
+            int[] wt = new int[] {8,7,6,4,5};
+            Console.WriteLine(indexx(wt, 4));
+            Console.WriteLine(modoless(25, 21, 122));
+            Console.WriteLine(qudat(1, 6, 12));
+            //{ string = "abcswfghi"}
+            Console.WriteLine(redx("greek"));
+            int[] jn = new int[] { 1, 2, 5 };
+            var er = ((jn));
+            for (int hjh = 0; hjh < jn.Length; hjh++)
+            {
+                var ui = jn[hjh] * 4;
+                Console.WriteLine(ui);
+            }
+            Console.WriteLine(replace("saeioun", '#'));
+            Console.WriteLine(lastfolder("D:\\flutter\\project1\\.dart_tool\\dartpad"));
+            Console.WriteLine(palindorm("mom"));
+            Console.WriteLine(space("codingisfun"));
+
+            int[] deb = { 1, 3, 3, 4, 5, 6, };
+            Array.Sort(deb);
+            var j = 0;
+            for (int i = 0; i < deb.Length - 1; i++)
+            {
+                if (deb[i] != deb[i + 1])
+                    deb[j++] = deb[i];
+            }
+            deb[j++] = deb[deb.Length - 1];
+
+            for (int i = 0; i < j; i++)
+            {
+                var fr = deb[i];
+                Console.WriteLine(fr);
+            }
+            var q = new circle(4.44);
+            Console.WriteLine(q.GetArea());
+            Console.WriteLine(q.GetPerameter());
+            Console.WriteLine(arrangr("coding"));
+            var ty = (hash("#sult+an#"));
+            for (int i = 0; i < ty.Length; i++)
+            {
+                var gh = ty[i];
+                Console.WriteLine(gh);
+            }
+            Console.WriteLine(cheaking("oox"));
+            Console.WriteLine(percentage(914, 1100));
+            string[] o = new string[] { "sew", "sea", "wave", "lazy", "sult" };
+            var hj = (four(o));
+
+            for (int i = 0; i < hj.Length; i++)
+            {
+                if (hj[i].Length == 4)
+                {
+                    string e = hj[i];
+
+                    Console.WriteLine(e);
+                }
+            }
+
+            int[] z = new int[] { 2, 3, 2, 3 };
+            int c = z.Length;
+            Console.WriteLine(mean(z, c));
+            Console.WriteLine(longe("what", 5));
+            int[] arre = new int[] { 1, 4, 8, 1, 3, 7 };
+            int len = arre.Length;
+            Console.WriteLine(average(arre, len));
+            int[] xe = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var ex = (evennum(xe));
+            for (int i = 0; i < ex.Length; i++)
+            {
+                if (ex[i] % 2 == 0)
+                {
+                    var ere = ex[i];
+                    Console.WriteLine(ere);
+                }
+
+            }
+
+            Console.WriteLine(order("coding is fun"));
+            Console.WriteLine(reversr("natlus"));
+            Console.WriteLine(lastdoubl("what?", 3));
+            
+            Console.WriteLine(doubstring("frozan"));
+            Console.WriteLine(detnum(5));
+            Console.WriteLine(get("sul", "tan"));
+            Console.WriteLine(date("17/01/2005"));
+            Console.WriteLine(repit("up", 3));
+            Console.WriteLine(multply(10));
+            Console.WriteLine(print("amazing"));
+            Console.WriteLine(path("D:\\Video\\sultan\\backup"));
+            Console.WriteLine(doub(5));
+            Console.WriteLine(delet("sultan"));
+            Console.WriteLine(matche("my name is muhammad ali"));
+            Console.WriteLine(clap("ccclaclap"));
+            Console.WriteLine(wiyhoutcondition(5));
+            Console.WriteLine(cameture("Hello"));
+            Console.WriteLine(replace("i do not known about coding and"));
+            Console.WriteLine(identical("aaaaaaa"));
+            int[] rtt = new int[] { 3, 6, 8, 4, 1, 8, 0, 4, 2, };
+            var fg = (ratrusn(rtt));
+
+            for (int i = 0; i < rtt.Length; i++)
+            {
+                var df = fg[i];
+                Console.WriteLine(df);
+            }
+
+            Console.WriteLine(vowals("electrica"));
+            Console.WriteLine(foctrial(6));
+
+
+
+            Console.WriteLine(givenim("4", "3"));
+            Console.WriteLine(shufal("sultan shaukat"));
+            Console.WriteLine(difer("sultan", "suttan"));
+
+
+            Console.WriteLine(por(5, 2));
+            int[] bnb = new int[] { -1, -3, -4, -4, -5 };
+            Console.WriteLine(absolute(bnb));
+            int[] njn = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var jkj = (nimtomax(njn));
+            for (int lo = 0; lo < jkj.Length; lo++)
+            {
+                var bhb = jkj[lo];
+                Console.WriteLine(bhb);
+            }
+
+            Console.WriteLine(numtomonth(4));
+            Console.WriteLine(instance('m', "my name is m"));
+
+            string rtr = "ali";
+            Console.WriteLine(rtr.IndexOf("l"));
+            List<string> xsx = new List<string>
+            {"ali","ali1","ali2" };
+
+
+            var eeees = string.Join("-----", xsx);
+
+            xsx.ToArray();
+            for (int zxz = 0; zxz < xsx.Count; zxz++)
+            {
+                var eeeeee = xsx[zxz];
+                string ioi = xsx[zxz];
+                Console.WriteLine(zxz);
+            }
+            Console.WriteLine(xsx);
+
+            int[] jump = new int[] { 1, 2, 3, 4, 5, 6 };
+            Console.WriteLine(hurbler(jump, 5));
+            Console.WriteLine(syllables("go-to-home"));
+            Console.WriteLine(days(2, 2001));
+            Console.WriteLine(backtohome("NESW"));
+            Console.WriteLine(wordcount("sultan and"));
+            string[] one = new string[] { "and", "two", "three", "four" };
+            Console.WriteLine(findindex(one, "and"));
+            Console.WriteLine(go(5));
+            Console.WriteLine(upper("sultaN"));
+            Console.WriteLine(yentodoller(1));
+            Console.WriteLine(numaurgu(3, 3, 4, 5));
+            int[] ary1 = new int[] { 1, 2, 3, 4 };
+            int[] ary2 = new int[] { 4, 5, 6, 7 };
+            var sds = (canvat(ary1, ary2));
+
+            for (int asa = 0; asa < sds.Length; asa++)
+            {
+                int wq = sds[asa];
+                Console.WriteLine(wq);
+            }
+
+            bool[] hgh = new bool[] { true, false, true, false };
+            Console.WriteLine(howmuch(hgh));
+            int[] mun = new int[] { 1, 2, 3, 4 };
+            Console.WriteLine(code(mun));
+
+
+            Console.WriteLine(smach(12.5, 12.4));
+            Console.WriteLine(repla("I AM STUDENT AND SOMETHING"));
+            Console.WriteLine(flip(1));
+            Console.WriteLine(chexk(3));
+
+            string[] gtg = { "12.3", "13.4", "14.7", "15.9" };
+            gtg[2] = "54";
+            decimal sum = 0;
+            for (int cot = 0; cot < gtg.Length; cot++)
+            {
+                string wa = gtg[cot];
+
+                sum = sum + decimal.Parse(wa);
+            }
+
+
+            int rtrt = int.Parse("5");
+            Console.WriteLine(rtr);
+            int[] ser = new int[] { 2, 3, 4, 56, 7, 8, };
+            Console.WriteLine(reverse(ser));
+            string[] ggf = new string[] { "small", "larg", "great", "big" };
+            var ddf = ebded(ggf, "est");
+            for (int tti = 0; tti < ddf.Length; tti++)
+            {
+                var ggt = ddf[tti];
+                Console.WriteLine(ggt);
+            }
+            Console.WriteLine(missangle(24, 23));
+            Console.WriteLine(intlength(23475));
+            Console.WriteLine(resister(2, 3, 5, 6));
+            Console.WriteLine(pow(3));
+            Console.WriteLine(ring("edabit is amazing."));
+            Console.WriteLine(ending("doing", "going"));
+            int[] dinf = new int[] { 2, 3, 4, 32, 2, 1, 6, 3, 2, 9, 0 };
+            Console.WriteLine(index(dinf, 0));
+            int[] id = new int[] { 1, 2, 3, 4, 43, 54, 45, 32, 24 };
+            Console.WriteLine(difff(id));
+            Console.WriteLine(metch("sultan", "SULTAN"));
+            Console.WriteLine(modulus(3, 4));
+            int aa = 0;
+            bool rr = (aa < 5) ? true : false;
+            Console.WriteLine(postiv(100));
+            Console.WriteLine(match("uyweuyyyyyyy"));
+            int[] ip = new int[] { 234, 5, 56, 7557, 23 };
+            Console.WriteLine(ocik(ip));
+            int[] pi = new int[] { 2, 32, 34, 5, 56, 5, 23, };
+            Console.WriteLine(pick(pi));
+            Console.WriteLine(operatorr(3, 2, "-"));
+            Console.WriteLine(typess(77));
+            Console.WriteLine(types("77"));
+            Console.WriteLine(somes(10, 14));
+            Console.WriteLine(singlur("apple"));
+            int[] rra = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            Console.WriteLine(abj(rra));
+            Console.WriteLine(slic(12, 4, 3));
+            int[] ma = new int[] { 13, 32, 15, 16, 17, 19, 22, 33 };
+            Console.WriteLine(dif(ma));
+            Console.WriteLine(equ0(2, 0));
+            Console.WriteLine(check("jsdf sdjf"));
+            Console.WriteLine(asint("6754254"));
+            Console.WriteLine(lang(653427));
+            Console.WriteLine(last("asad"));
+            Console.WriteLine(lengt("apple"));
+            Console.WriteLine(safe("dwh ebdw"));
+            Console.WriteLine(oddor(4));
+            Console.WriteLine(evenor("jkqfdkqwdcvh"));
+
+            for (int ii = 0; ii <= 5; ii++)
+            {
+                Console.WriteLine(ii);
+            }
+
+            Console.WriteLine(trie(0, 2));
+            Console.WriteLine(times(12, true));
+            Console.WriteLine(Math.Abs(positive(-45)));
+            Console.WriteLine(negative(12));
+            Console.WriteLine(cup(12));
+            Console.WriteLine(equ("sul", "sh"));
+            Console.WriteLine(abs(-23));
+            Console.WriteLine(empty(""));
+            Console.WriteLine(cancate("sultan", " shaukat"));
+            Console.WriteLine(fix(1));
+            Console.WriteLine(cube2(2));
+            Console.WriteLine(cube(3));
+            Console.WriteLine(chist(2005, 11, 12));
+            Console.WriteLine(profit(2, 5, 1));
+            Console.WriteLine(frame(10, 25));
+            Console.WriteLine(eqdivid(4, 4));
+            Console.WriteLine(squr(2));
+            Console.WriteLine(divideby5(10));
+            Console.WriteLine(greeteng("asad"));
+            Console.WriteLine(feet(4));
+            Console.WriteLine(triangleside(1, 2));
+            Console.WriteLine(convertintosec(1, 10));
+            Console.WriteLine(Sum(2, 3));
+            Console.WriteLine(converte(2));
+            Console.WriteLine(add(12, 12));
+            Console.WriteLine(total(19, 13));
+            Console.WriteLine(calage(18));
+            Console.WriteLine(triangle(2, 2));
+            Console.WriteLine(reminder(4, 5));
+            Console.WriteLine(than(5, 0));
+            Console.WriteLine(yes(35, 55));
+            Console.WriteLine(method(3, 2));
+            Console.WriteLine(methods(" is better"));
+            Console.WriteLine(rev(true));
+            Console.WriteLine(time(24));
+            Console.WriteLine(poly(3));
+            Console.WriteLine(equal(2, 2));
+            Console.WriteLine(name("ali"));
+            Console.WriteLine(and(true, false));
+            Console.WriteLine(points(2, 3));
+            Console.WriteLine(tri(7, 6));
+            Console.WriteLine(greeting(" Bhai"));
+            Console.WriteLine(legs(2, 3, 4));
+            Console.WriteLine(football(2, 3, 5));
+            Console.WriteLine();
+        }
+
+    }
+}
+
 
